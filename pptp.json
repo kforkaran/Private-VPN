@@ -1,0 +1,21 @@
+[{
+    "ParameterKey": "VPNUsername",
+    "ParameterValue": "user1234"
+  },
+  {
+    "ParameterKey": "VPNPassword",
+    "ParameterValue": "pass1234"
+  },
+  {
+    "ParameterKey": "VPNPhrase",
+    "ParameterValue": "pass1234"
+  },
+  {
+    "ParameterKey": "DNSServerPrimary",
+    "ParameterValue": "1.1.1.1"
+  },
+  {
+    "ParameterKey": "DNSServerSecondary",
+    "ParameterValue": "1.0.0.1"
+  }
+]
