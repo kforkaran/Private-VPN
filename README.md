@@ -27,6 +27,9 @@ aws configure
 
 **You will get stack id in response if everything went right**
 
+![create result](./images/create.png)
+Press q or Ctrl+C to return to Console
+
 **Note:** Replace `<stack-name>` with name of your choice `ex: ./create.sh vpn pptp.yaml pptp.json`
 
 **Note:** If permission denied run `chmod +x create.sh` and then `./create.sh vpn pptp.yaml pptp.json`
@@ -43,7 +46,7 @@ aws configure
 
 **Note:** If permission denied run `chmod +x getIp.sh` and then `./getIp.sh vpn`
 
-![result](./images/ip.png)
+![getIp result](./images/ip.png)
 
 **This will be your ip address. Copy this Ip Adress and setup VPN on your device and use this Ip address as gateway. Username and Password will be what use used in the pptp.json file while replacing the parameters.**
 **<br>Default Username: user1234 and Password: pass1234**
