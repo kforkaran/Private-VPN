@@ -11,7 +11,8 @@ Setting up a Private VPN on Amazon AWS Cloud using CloudFormation
 
 - Configure aws cli on local computer using:
 
-```aws configure
+```
+aws configure
 
 ```
 
@@ -21,7 +22,8 @@ Setting up a Private VPN on Amazon AWS Cloud using CloudFormation
 
 - run create.sh bash script using:
 
-```./create.sh <stack-name> pptp.yaml pptp.json
+```
+./create.sh <stack-name> pptp.yaml pptp.json
 
 ```
 
