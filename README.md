@@ -19,7 +19,7 @@ aws configure
 
 - In `pptp.json` file change `ParameterValue` of `VPNUsername` and `VPNPassword`
 
-**Note:** It is important to delete the server when no longer using vpn because every time you run `create.sh` a new EC2 server will run and your cost will increase. AWS provide 750 hours of EC2 in its free tier so you won't occur charges as long as you delete the instance after you are no longer using it.
+**Note:** It is important to delete the server when no longer using vpn because every time you run `create.sh` a new EC2 server will run and your cost will increase. AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you delete the instance after you are no longer using it.
 
 - Run `create.sh` bash script using:
 
