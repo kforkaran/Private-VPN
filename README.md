@@ -25,14 +25,14 @@ aws configure
 ./create.sh <stack-name> pptp.yaml pptp.json
 ```
 
+**Note:** Replace `<stack-name>` with name of your choice `ex: ./create.sh vpn pptp.yaml pptp.json`
+
+**Note:** If permission denied run `chmod +x create.sh` and then `./create.sh vpn pptp.yaml pptp.json`
+
 **You will get stack id in response if everything went right**
 
 ![create result](./images/create.png)
 Press q or Ctrl+C to return to Console
-
-**Note:** Replace `<stack-name>` with name of your choice `ex: ./create.sh vpn pptp.yaml pptp.json`
-
-**Note:** If permission denied run `chmod +x create.sh` and then `./create.sh vpn pptp.yaml pptp.json`
 
 **Wait for a minute or two for AWS EC2 instance to setup**
 
