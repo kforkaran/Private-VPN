@@ -9,10 +9,6 @@ Setting up a Private VPN on Amazon AWS Cloud using CloudFormation
 
 ## How to setup VPN
 
-**Currently the only region supported is `us-west-2`.
-<br>If you want to run a server in specific region then replace `us-west-2` with your required region in `create.sh`, `getIp.sh` and `delete.sh` file.
-<br>Also include mapping of your region to the AMI in `pptp.yaml` file.**
-
 - Configure aws cli on local computer using:
 
 ```
@@ -65,3 +61,7 @@ aws configure
 **Note:** AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you dont exceed 750 hours. If you use more than one EC2 instance it is recommended to delete the EC2 instance when not using it. Although you have to set VPN connection on your device everytime if you delete server as the Ip Address will change.
 
 `On deleting the stack for the first time do verify that stack has been deleted successfully using AWS Console and going to CloudFormation.`
+
+**Currently the only region supported is `us-west-2`.
+<br>If you want to run a server in specific region then replace `us-west-2` with your required region in `create.sh`, `getIp.sh` and `delete.sh` file.
+<br>Also include mapping of your region to the AMI in `pptp.yaml` file.**
