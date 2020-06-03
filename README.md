@@ -19,17 +19,15 @@ aws configure
 
 - In `pptp.json` file change `ParameterValue` of `VPNUsername` and `VPNPassword`
 
-**Note:** It is important to delete the server when no longer using vpn because every time you run `create.sh` a new EC2 server will run and your cost will increase. AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you delete the instance after you are no longer using it.
-
-- Run `create.sh` bash script using:
-
-**You will get stack id in response if everything went right**
-
-**Note:** Replace `<stack-name>` with name of your choice `ex: ./create.sh vpn pptp.yaml pptp.json`
+* Run `create.sh` bash script using:
 
 ```
 ./create.sh <stack-name> pptp.yaml pptp.json
 ```
+
+**You will get stack id in response if everything went right**
+
+**Note:** Replace `<stack-name>` with name of your choice `ex: ./create.sh vpn pptp.yaml pptp.json`
 
 **Note:** If permission denied run `chmod +x create.sh` and then `./create.sh vpn pptp.yaml pptp.json`
 
@@ -47,7 +45,10 @@ aws configure
 
 ![result](./images/ip.png)
 
-- Run `delete.sh`to delte EC2 instance
+**This will be your ip address. Copy this Ip Adress and setup VPN on your device and use this Ip address as gateway. Username and Password will be what use used in the pptp.json file while replacing the parameters.**
+**Default Username: user1234 and Password: pass1235**
+
+- To delete the server run `delete.sh`
 
 ```
 ./delete.sh <stack-name>
@@ -56,3 +57,7 @@ aws configure
 **Note:** Replace `<stack-name>` with the name of stack `ex: ./delete.sh vpn`
 
 **Note:** If permission denied run `chmod +x delete.sh` and then `./delete.sh vpn`
+
+**Note:** AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you dont exceed 750 hours. If you use more than one EC2 instance it is recommended to delete the EC2 instance when not using it. Although you have to set VPN connection on your pc everytime if you delete server as the Ip Address will change.
+
+`Also for the first time do verify that stack has been deleted successfully using AWS Console and going to CloudFormation.`
