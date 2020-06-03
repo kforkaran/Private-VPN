@@ -9,6 +9,10 @@ Setting up a Private VPN on Amazon AWS Cloud using CloudFormation
 
 ## How to setup VPN
 
+**Currently the only region supported is `us-west-2`.
+<br>If you want to run a server in specific region then replace `us-west-2` with your required region in `create.sh`, `getIp.sh` and `delete.sh` file.
+<br>Also include mapping of your region to the AMI in `pptp.yaml` file.**
+
 - Configure aws cli on local computer using:
 
 ```
