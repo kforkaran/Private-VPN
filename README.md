@@ -46,7 +46,7 @@ aws configure
 ![result](./images/ip.png)
 
 **This will be your ip address. Copy this Ip Adress and setup VPN on your device and use this Ip address as gateway. Username and Password will be what use used in the pptp.json file while replacing the parameters.**
-**Default Username: user1234 and Password: pass1235**
+**<br>Default Username: user1234 and Password: pass1234**
 
 - To delete the server run `delete.sh`
 
