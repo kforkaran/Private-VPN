@@ -58,6 +58,6 @@ aws configure
 
 **Note:** If permission denied run `chmod +x delete.sh` and then `./delete.sh vpn`
 
-**Note:** AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you dont exceed 750 hours. If you use more than one EC2 instance it is recommended to delete the EC2 instance when not using it. Although you have to set VPN connection on your pc everytime if you delete server as the Ip Address will change.
+**Note:** AWS provide `750 hours per month of EC2` in its free tier so you won't occur charges as long as you dont exceed 750 hours. If you use more than one EC2 instance it is recommended to delete the EC2 instance when not using it. Although you have to set VPN connection on your device everytime if you delete server as the Ip Address will change.
 
-`Also for the first time do verify that stack has been deleted successfully using AWS Console and going to CloudFormation.`
+`On deleting the stack for the first time do verify that stack has been deleted successfully using AWS Console and going to CloudFormation.`
