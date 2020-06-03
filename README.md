@@ -36,7 +36,7 @@ Press q or Ctrl+C to return to Console
 
 **Wait for a minute or two for AWS EC2 instance to setup**
 
-- Run `getIp.sh` to get the ip address of the EC2 instance
+- Run `getIp.sh` to get the ip address of the EC2 instance. If you get None then re-run after one or two minute
 
 ```
 ./getIp.sh <stack-name>
@@ -48,7 +48,7 @@ Press q or Ctrl+C to return to Console
 
 ![getIp result](./images/ip.png)
 
-**This will be your ip address. Copy this Ip Adress and setup VPN on your device and use this Ip address as gateway. Username and Password will be what use used in the pptp.json file while replacing the parameters.**
+**This will be your ip address. Copy this Ip Adress and setup VPN on your device and use this Ip address as gateway. Username and Password will be what use used in the pptp.json file while replacing the parameter value.**
 **<br>Default Username: user1234 and Password: pass1234**
 
 - To delete the server run `delete.sh`
